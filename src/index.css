@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply text-h1 font-h my-h;
+}
+
+h2 {
+    @apply text-h2 font-h my-h;
+}
+
+h3 {
+    @apply text-h3 font-h my-h;
+}
+
+h4 {
+    @apply text-h4 font-h my-h;
+}
+
+h5 {
+    @apply text-h5 font-h my-h;
+}
+
+h6 {
+    @apply text-h6 font-h my-h;
+}
+
+.react-codemirror2 > .CodeMirror:first-child {
+    display: none;
+}
+
+.CodeMirror {
+    height: 48vh !important;
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar {
+    width: 7px;
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
+    background: #bd93f9;
+}
+
+/* custom scrollbar css */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    outline: none;
+    /* background-color: #ccc; */
+    border-radius: 1.7rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(34, 34, 96, 1);
+    border-radius: 1.7rem;
+}
+
+/* Pagination sdtyles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+    font-size: 1rem;
+}
+
+.pagination li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination li.disabled a {
+    color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination .previous,
+.pagination .next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #007bff;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.pagination .previous:hover,
+.pagination .next:hover {
+    background-color: #007bff;
+    color: white;
+}
