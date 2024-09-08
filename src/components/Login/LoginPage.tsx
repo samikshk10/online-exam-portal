@@ -11,7 +11,6 @@ const LoginPage: React.FC = () => {
                     style={{ backgroundImage: `url(${Image})` }}
                 ></div>
                 <LoginForm />
-
             </div>
         </div>
     );
