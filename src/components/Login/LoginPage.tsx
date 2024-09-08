@@ -1,6 +1,6 @@
-import React from 'react';
-import LoginForm from './LoginForm';
-import Image from '../../assets/Images/onlineexamimage.jpg';
+import Image from "../../assets/Images/onlineexamimage.jpg";
+import LoginForm from "./LoginForm";
+import React from "react";
 
 const LoginPage: React.FC = () => {
     return (
@@ -11,6 +11,7 @@ const LoginPage: React.FC = () => {
                     style={{ backgroundImage: `url(${Image})` }}
                 ></div>
                 <LoginForm />
+
             </div>
         </div>
     );
