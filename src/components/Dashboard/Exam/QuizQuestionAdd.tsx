@@ -245,8 +245,8 @@ const MCQQuestionsAdd: React.FC<{
                         </FieldArray>
                         <div className="mt-4 flex justify-between">
                             <Button
-                                variant="secondary"
-                                className="bg-gray-500"
+                                variant="primary"
+                                outline
                                 handleBtnClick={() => {
                                     dispatch(setMCQFormValues(values));
                                     prevStep();

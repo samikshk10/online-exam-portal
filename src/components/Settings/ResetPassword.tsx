@@ -1,12 +1,12 @@
-import * as Yup from 'yup';
-import React from 'react';
-import { ErrorMessage, Field, Form, Formik } from 'formik';
-import { Toast } from '../../helper/toast';
+import * as Yup from "yup";
+import React from "react";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import { Toast } from "../../helper/toast";
 
 // Define validation schema using Yup
 const validationSchema = Yup.object({
     password: Yup.string()
-        .required('Password is required')
+        .required('Password is requiredf')
         .min(8, 'Password must be at least 8 characters')
         .matches(/[A-Z]/, 'Password must contain at least one uppercase letter')
         .matches(/[a-z]/, 'Password must contain at least one lowercase letter')

@@ -20,13 +20,13 @@ function Button({
     handleBtnClick,
 }: ButtonType) {
     const baseClasses =
-        'border-2 border-solid h-fit rounded-[7px] py-[5px] px-[20px] text-[18px] tracking-wide font-bold flex items-center gap-2';
+        'border-2 border-solid h-fit rounded-[7px] py-[2px] px-[10px] text-[18px] font-normal flex items-center gap-2';
     const cursorClasses = disabled ? 'cursor-not-allowed' : 'cursor-pointer';
     const outlineClasses = outline ? 'bg-transparent' : 'text-white';
 
     const variantClasses = {
         danger: `border-red-500 ${outline ? 'text-red-500' : 'bg-red-500 text-white'}`,
-        primary: `border-[#1935CA] ${outline ? 'text-[#1935CA]' : 'bg-[#1935CA] text-white'}`,
+        primary: `border-[#3b82f6] ${outline ? 'text-[#3b82f6]' : 'bg-[#3b82f6] text-white'}`,
         secondary: `border-[#47a992] ${outline ? 'text-[#47a992]' : 'bg-[#47a992] text-white'}`,
     };
 

@@ -1,6 +1,6 @@
-import Image from '../../assets/Images/onlineexamimage.jpg';
-import LoginForm from './LoginForm';
 import React from 'react';
+import LoginForm from './LoginForm';
+import Image from '../../assets/Images/onlineexamimage.jpg';
 
 const LoginPage: React.FC = () => {
     return (

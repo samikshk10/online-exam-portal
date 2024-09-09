@@ -1,8 +1,8 @@
-import Button from '../components/common/Button';
-import { useNavigate } from 'react-router-dom';
+// import Button from '../components/common/Button';
+// import { useNavigate } from 'react-router-dom';
 
 function ExamCompletion() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     return (
         <div className="w-dvw h-dvh grid place-content-center bg-[#f4fbf9] text-center">
             <h2 className="mb-4">
@@ -13,7 +13,7 @@ function ExamCompletion() {
                 team. We'll react out to you with the results within 2 weeks.
             </p>
             <p>Please contact us at 9864214929 in case of any queries.</p>
-            <div className="w-fit mx-auto mt-4">
+            {/* <div className="w-fit mx-auto mt-4">
                 <Button
                     variant="primary"
                     handleBtnClick={() => {
@@ -23,7 +23,7 @@ function ExamCompletion() {
                 >
                     Go To Home
                 </Button>
-            </div>
+            </div> */}
         </div>
     );
 }

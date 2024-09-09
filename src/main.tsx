@@ -20,7 +20,7 @@ import { ToastContainer } from 'react-toastify';
 import { store } from './app/store';
 
 const App = () => {
-    const [canAccessExamPortal, setCanAccessExamPortal] = useState(false);
+    const [canAccessExamPortal, setCanAccessExamPortal] = useState(true);
 
     const router = createBrowserRouter([
         {
