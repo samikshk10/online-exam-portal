@@ -15,7 +15,6 @@ const LoginForm: React.FC = () => {
     const [searchParams] = useSearchParams();
     const token = searchParams.get('token');
 
-
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -31,7 +30,6 @@ const LoginForm: React.FC = () => {
         }),
         validateOnBlur: false,
         onSubmit: async (values) => {
-            console.log(values.email, values.password, token);
             if (token) {
                 const login = await loginExam({
                     email: values.email,
