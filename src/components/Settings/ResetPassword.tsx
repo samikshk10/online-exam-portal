@@ -6,7 +6,7 @@ import { Toast } from '../../helper/toast';
 // Define validation schema using Yup
 const validationSchema = Yup.object({
     password: Yup.string()
-        .required('Password is requiredf')
+        .required('Password is required')
         .min(8, 'Password must be at least 8 characters')
         .matches(/[A-Z]/, 'Password must contain at least one uppercase letter')
         .matches(/[a-z]/, 'Password must contain at least one lowercase letter')

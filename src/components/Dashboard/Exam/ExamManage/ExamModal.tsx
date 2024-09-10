@@ -101,7 +101,7 @@ const ExamInfo: React.FC<ExamInfoProps> = ({ onClose, onExamAdded }) => {
                                     className="text-red-500"
                                 />
                             </div>
-                            <div className="mb-4 flex justify-between">
+                            {/* <div className="mb-4 flex justify-between">
                                 <TimePicker
                                     label="Start Time"
                                     value={startTime}
@@ -124,7 +124,7 @@ const ExamInfo: React.FC<ExamInfoProps> = ({ onClose, onExamAdded }) => {
                                         setStartDate(e.target.value)
                                     }
                                 />
-                            </div>
+                            </div> */}
 
                             <div className="mb-4">
                                 <label className="block mb-2">

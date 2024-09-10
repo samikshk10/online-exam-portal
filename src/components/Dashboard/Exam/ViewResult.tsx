@@ -30,7 +30,10 @@ const ViewResult = () => {
     const usersPerPage = 10;
     const pageCount = Math.ceil(resultData.length / usersPerPage);
     const offset = currentPage * usersPerPage;
-    const currentResult = resultData?.slice(offset, offset + usersPerPage);
+    const currentResult =
+        resultData.length > 0
+            ? resultData?.slice(offset, offset + usersPerPage)
+            : [];
 
     const handlePageClick = ({ selected }: { selected: number }) => {
         setCurrentPage(selected);
@@ -155,40 +158,45 @@ const ViewResult = () => {
                                 </tr>
                             ) : (
                                 currentResult.length !== 0 &&
-                                currentResult?.map((Result, index) => (
-                                    <tr
-                                        key={Result.id}
-                                        className="text-center border-b-2"
-                                    >
-                                        <td className="py-2">
-                                            {offset + index + 1}
-                                        </td>
-                                        <td className="py-2">
-                                            {Result.exam.examTitle}
-                                        </td>
-                                        <td className="py-2">
-                                            {Result.user.fullName}
-                                        </td>
-                                        <td className="py-2">
-                                            {Result.exam.mcqQuestionMarks}
-                                        </td>
-                                        <td className="py-2">
-                                            {Result.exam.codeQuestionEasyMarks}
-                                        </td>
-                                        <td className="py-2">
-                                            {
-                                                Result.exam
-                                                    .codeQuestionMediumHardMarks
-                                            }
-                                        </td>
-                                        <td className="py-2">
-                                            {Result.obtainedMarks}
-                                        </td>
-                                        <td className="py-2">
-                                            {Result.totalMarks}
-                                        </td>
-                                    </tr>
-                                ))
+                                currentResult
+                                    ?.reverse()
+                                    .map((Result, index) => (
+                                        <tr
+                                            key={Result.id}
+                                            className="text-center border-b-2"
+                                        >
+                                            <td className="py-2">
+                                                {offset + index + 1}
+                                            </td>
+                                            <td className="py-2">
+                                                {Result.exam.examTitle}
+                                            </td>
+                                            <td className="py-2">
+                                                {Result.user.fullName}
+                                            </td>
+                                            <td className="py-2">
+                                                {Result.exam.mcqQuestionMarks}
+                                            </td>
+                                            <td className="py-2">
+                                                {
+                                                    Result.exam
+                                                        .codeQuestionEasyMarks
+                                                }
+                                            </td>
+                                            <td className="py-2">
+                                                {
+                                                    Result.exam
+                                                        .codeQuestionMediumHardMarks
+                                                }
+                                            </td>
+                                            <td className="py-2">
+                                                {Result.obtainedMarks}
+                                            </td>
+                                            <td className="py-2">
+                                                {Result.totalMarks}
+                                            </td>
+                                        </tr>
+                                    ))
                             )}
                         </tbody>
                     </table>

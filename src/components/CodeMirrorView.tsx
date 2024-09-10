@@ -154,7 +154,7 @@ function CodeMirrorView(props: CodeMirrorViewType) {
     };
     return (
         <div className="h-full w-full flex flex-col gap-2 md:flex-row">
-            <div className="flex-1">
+            <div className="flex-1 max-w-[600px]">
                 <p className="text-[20px] font-semibold">
                     Q.
                     {activeQuestionIndex && activeQuestionIndex + 1}{' '}
@@ -175,7 +175,7 @@ function CodeMirrorView(props: CodeMirrorViewType) {
                     />
                 )}
             </div>
-            <div className="flex-[2_2_0%] h-max">
+            <div className="flex-1 h-max">
                 <div className="flex justify-between items-center my-2 mr-4">
                     <p className="font-semibold">
                         <span className="inline-block font-bold mr-1 text-[#1935CA]">

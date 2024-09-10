@@ -80,8 +80,8 @@ const ExamTable = ({ exams, onUpdated }: ExamTableProps) => {
                             <th className="py-2">Exam Title</th>
                             <th className="py-2">Exam Description</th>
                             <th className="py-2">MCQ Marks</th>
-                            <th className="py-2">Code Question Easy</th>
-                            <th className="py-2">Code Question Medium</th>
+                            <th className="py-2">Easy Code Question Marks</th>
+                            <th className="py-2">Medium Code Question Marks</th>
                             <th className="py-2">Total Marks</th>
                             <th className="py-2">Action</th>
                         </tr>
@@ -140,9 +140,6 @@ const ExamTable = ({ exams, onUpdated }: ExamTableProps) => {
                                                     Schedule
                                                 </Button>
                                             )}
-                                            <Button variant="primary">
-                                                View Participant
-                                            </Button>
                                         </div>
                                     </td>
                                 </tr>

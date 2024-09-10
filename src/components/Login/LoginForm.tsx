@@ -30,6 +30,7 @@ const LoginForm: React.FC = () => {
         }),
         validateOnBlur: false,
         onSubmit: async (values) => {
+            console.log(values.email, values.password, token);
             if (token) {
                 const login = await loginExam({
                     email: values.email,

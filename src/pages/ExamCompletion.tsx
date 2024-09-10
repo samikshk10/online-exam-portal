@@ -13,6 +13,12 @@ function ExamCompletion() {
                 team. We'll react out to you with the results within 2 weeks.
             </p>
             <p>Please contact us at 9864214929 in case of any queries.</p>
+            <p>
+                <strong>
+                    Your Exam Result will be sent with in a moment. Please check
+                    your email.
+                </strong>
+            </p>
             {/* <div className="w-fit mx-auto mt-4">
                 <Button
                     variant="primary"
